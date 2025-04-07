@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from rest_framework import generics
-from .models import Menu
-from .serializers import MenuSerializer
+from rest_framework import generics, viewsets
+from .models import Menu, Booking
+from .serializers import MenuSerializer, BookingSerializer
 from rest_framework.response import Response
 
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
@@ -33,3 +33,8 @@ class SingleMenuItem(generics.RetrieveUpdateDestroyAPIView):
     #     if self.request.method != 'GET':
     #         permission_class = [IsAuthenticated]
     #     return Response(permission() for permission in permission_class)
+
+class BookingViewSet(viewsets.ModelViewSet):
+    queryset = Booking.objects.all()
+    serializer_class = BookingSerializer
+    permission_classes = [IsAuthenticated]

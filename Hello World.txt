@@ -3,3 +3,7 @@ User test:
 * admin *
 user: admin
 password: lemon@123!
+
+*User*
+user: Miso
+passowrd lemon@123!

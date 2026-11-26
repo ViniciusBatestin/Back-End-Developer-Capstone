@@ -37,4 +37,4 @@ Python · Django · Django REST Framework · Djoser · MySQL
 3. Apply migrations: `pipenv run python manage.py migrate`
 4. Create an admin user: `pipenv run python manage.py createsuperuser`
 5. Start the server: `pipenv run python manage.py runserver`
-6. Run the tests: `pipenv run python manage.py test`<img width="1600" height="888" alt="capstone-home" src="https://github.com/user-attachments/assets/dec16898-b9e2-4a8b-94ea-204ca9bc79f7" />
+6. Run the tests: `pipenv run python manage.py
